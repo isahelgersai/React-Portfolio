@@ -16,7 +16,7 @@ const ContactInfo = () => {
             <svg viewBox='0 0 24 24' className='w-7 h-7 mr-1' fill='currentColor'>
               <path d='M17 19H7V5h10m0-4H7c-1.11 0-2 .89-2 2v18a2 2 0 002 2h10a2 2 0 002-2V3a2 2 0 00-2-2z' />
             </svg>
-            <p>+57-3219007635 </p>
+            <p>+57 3219007635 </p>
           </div>
         </div>
       </div>
