@@ -1,5 +1,5 @@
-import Portfolio1 from 'assets/portfolio1.jpeg';
-import Portfolio2 from 'assets/portfolio2.jpeg';
+import Portfolio1 from '../assets/portfolio1.jpeg';
+import Portfolio2 from '../assets/portfolio2.jpeg';
 
 export default [
   {
