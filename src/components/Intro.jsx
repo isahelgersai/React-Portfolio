@@ -1,9 +1,10 @@
 import React from 'react';
+import Avatar from '../assets/photo-avatar.jpg';
 
 const Intro = () => {
   return (
     <div className='flex items-center justify-center flex-col text-center pt-20 pb-6'>
-      <img className='rounded-full w-36 h-36' src='./assets/photo-avatar.jpg' alt='Extra large avatar'></img>
+      <img className='rounded-full w-36 h-36' src={Avatar} alt='Extra large avatar'></img>
       <h1 className='text-4xl md:text-7xl mb-1 md:mb-3 font-bold'>Isahel Heredia</h1>
       <h2 className='text-3xl md:textxl mb-3 font-semibold'>Web Developer</h2>
       <p className='text-xl md:textxl mb-3 font-medium'>React | CSS | JavaScript</p>
