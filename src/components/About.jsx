@@ -5,7 +5,7 @@ import Avatar from '../assets/photo-avatar.jpg';
 const About = () => {
   return (
     <>
-      <Title> About </Title>
+      <Title> About Me </Title>
       <div className='flex-col md:flex-row items-center justify-center my-28'>
         <img className='rounded-full w-36 h-36 float-left mr-10' src={Avatar} alt='Extra large avatar'></img>
         <p className='text-base max-w-xl mb-6 font-bold'>
