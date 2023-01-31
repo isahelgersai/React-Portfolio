@@ -55,7 +55,7 @@ const Contact = () => {
             />
             <button
               type='submit'
-              className='text-center inline-block px-8 py-3 w-max text-md font-semibold rounded-md text-white bg-gradient-to-r from-slate-800 via-teal-700 to-slate-800 drop-shadow-md hover:stroke-white duration-500'
+              className=' text-lg text-center inline-block px-8 py-3 w-full text-md font-semibold rounded-lg text-white bg-gradient-to-r from-slate-800 via-teal-700 to-slate-800 drop-shadow-sm'
             >
               Contact Me
             </button>

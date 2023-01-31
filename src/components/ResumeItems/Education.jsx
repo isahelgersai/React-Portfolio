@@ -9,7 +9,7 @@ const Education = () => {
         <li className='mb-10 ml-4'>
           <div className='absolute w-3 h-4 bg-teal-500 rounded-full mt-1.5 -left-1.5 border-2 border-stone-50'></div>
           <time className='mb-1 text-sm font-normal leading-none text-stone-400 select-none'>2016 - 2018</time>
-          <h3 className='text-lg font-bold text-stone-50 select-none'>System Engineer (12 trimester)</h3>
+          <h3 className='text-lg font-bold text-stone-50 select-none'>Systems Engineering (12 trimester)</h3>
           <p className='mb-4 text-base font-medium text-stone-200 select-none'>
             Universidad de Margarita – Nueva Esparta, Venezuela
           </p>
