@@ -12,7 +12,7 @@ const About = () => {
           src={Avatar}
           alt='Extra large avatar'
         ></img>
-        <p className='text-lg lg:text-2xl md:text-lg font-bold text-justify text-stone-50'>
+        <p className='text-lg lg:text-2xl md:text-lg font-bold text-justify text-stone-50 select-none'>
           27 Years old software developer, with over 4+ years of work experience. Trying to keep in touch with current
           and emerging technologies and aiming to learn and improve my skills every day, building my version of the
           digital wolrd one step at a time.
