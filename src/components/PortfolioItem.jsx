@@ -9,7 +9,7 @@ const PortfolioItem = ({ title, imgUrl, stack, link }) => {
       className='border-2 border-teal-500 rounded-md overflow-hidden bg-stone-100'
     >
       <img src={imgUrl} alt='portfolio' className='w-full h-36 md:h-48 object-cover cursor-pointer' />
-      <div className='w-full p-4'>
+      <div className='w-full p-4 font-inter'>
         <h3 className='text-lg underline underline-offset-4 decoration-teal-600 md:text-xl mb-5 mb:mb-3 font-bold'>
           {title}
         </h3>

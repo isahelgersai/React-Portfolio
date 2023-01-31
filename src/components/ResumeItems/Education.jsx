@@ -2,7 +2,7 @@ import React from 'react';
 
 const Education = () => {
   return (
-    <>
+    <div className='font-inter'>
       <h5 className='text-xl font-semibold mt-10 text-stone-50 select-none'>Education</h5>
 
       <ol className='relative border-l border-teal-500 mt-10 mb-20 ml-10 '>
@@ -23,7 +23,7 @@ const Education = () => {
           </p>
         </li>
       </ol>
-    </>
+    </div>
   );
 };
 

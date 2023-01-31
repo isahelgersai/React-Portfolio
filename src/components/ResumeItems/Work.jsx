@@ -3,7 +3,7 @@ import Title from '../Title';
 
 const Work = () => {
   return (
-    <>
+    <div className='font-inter'>
       <h5 className='text-xl font-semibold mt-10 text-stone-50 select-none'>Work Experience</h5>
 
       <ol className='relative border-l border-teal-500 mt-10 mb-20 ml-10 '>
@@ -36,7 +36,7 @@ const Work = () => {
           </p>
         </li>
       </ol>
-    </>
+    </div>
   );
 };
 

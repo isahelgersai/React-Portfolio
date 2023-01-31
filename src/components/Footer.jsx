@@ -3,7 +3,7 @@ import { ReactComponent as Linkedin } from '../assets/linkedin.svg';
 
 const Footer = () => {
   return (
-    <div className='py-5 text-center'>
+    <div className='py-5 text-center font-inter'>
       <div className='container max-w-screen-lg mx-auto'>
         <div>
           <div className='flex flex-wrap justify-center gap-2'>

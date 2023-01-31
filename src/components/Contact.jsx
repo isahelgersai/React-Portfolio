@@ -7,7 +7,7 @@ const Contact = () => {
     <>
       <Title>Contact</Title>
 
-      <div className='flex flex-col mb-10 mx-auto'>
+      <div className='flex flex-col mb-10 mx-auto font-inter'>
         <div className='flex justify-center items-center'>
           <form
             action='https://getform.io/f/9b958f56-1cfa-4069-a9f3-ef913e9fe5d8'

@@ -2,7 +2,7 @@ import React from 'react';
 
 const ContactInfo = () => {
   return (
-    <div class='grid col-span-1 md:flex items-center justify-center mt-20'>
+    <div class='grid col-span-1 md:flex items-center justify-center mt-20 font-inter'>
       <div class='md:flex items-center mb-4'>
         <div class='flex items-center md:mr-8 mb-4 md:mb-0'>
           <svg viewBox='0 0 24 24' className='w-7 h-7 mr-2 text-teal-500 fill-current'>

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Intro = () => {
   return (
-    <div className='flex items-center justify-center flex-col text-center pt-20 pb-6 mb-56 mt-40'>
+    <div className='flex items-center justify-center flex-col text-center pt-20 pb-6 mb-56 mt-40 font-inter'>
       <h1 className='text-4xl lg:text-7xl md:text-7xl mb-1 md:mb-3 font-bold text-stone-50 select-none'>
         Isahel Heredia
       </h1>
