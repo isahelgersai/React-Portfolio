@@ -13,7 +13,7 @@ export default [
     id: 'project-2',
     title: 'ToDo List',
     imgUrl: Portfolio2,
-    stack: ['React', 'Tailwind', 'Laravel'],
+    stack: ['React', 'Tailwind', 'Laravel', 'MySQL'],
     link: 'https://github.com/isahelgersai/TodoList-React-Laravel',
   },
 ];

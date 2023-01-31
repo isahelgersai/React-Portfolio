@@ -18,23 +18,44 @@ const Contact = () => {
               type='text'
               name='name'
               placeholder='Name'
-              className='p-2 bg-transparent border-2 rounded-md focus:outline-none'
+              className='form-control
+              my-2 p-2
+              bg-transparent
+              border-2 rounded-md border-white
+              transition
+              ease-in-out
+              focus:text-gray-700 focus:bg-white focus:border-teal-500 focus:outline-none'
+              required
             />
             <input
               type='text'
               name='email'
               placeholder='Email'
-              className=' my-2 p-2 bg-transparent border-2 rounded-md focus:outline-none'
+              className='form-control
+              my-2 p-2
+              bg-transparent
+              border-2 rounded-md border-white
+              transition
+              ease-in-out
+              focus:text-gray-700 focus:bg-white focus:border-teal-500 focus:outline-none'
+              required
             />
             <textarea
               name='message'
               placeholder='Message'
               rows='10'
-              className='p-2 mb-4 bg-transparent border-2 rounded-md focus:outline-none'
+              className='form-control
+              mb-4 p-2
+              bg-transparent
+              border-2 rounded-md border-white
+              transition
+              ease-in-out
+              focus:text-gray-700 focus:bg-white focus:border-teal-500 focus:outline-none'
+              required
             />
             <button
               type='submit'
-              className='text-center inline-block px-8 py-3 w-max text-base font-medium rounded-md text-white bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900 drop-shadow-md hover:stroke-white'
+              className='text-center inline-block px-8 py-3 w-max text-md font-semibold rounded-md text-white bg-gradient-to-r from-slate-800 via-teal-700 to-slate-800 drop-shadow-md hover:stroke-white duration-500'
             >
               Contact Me
             </button>

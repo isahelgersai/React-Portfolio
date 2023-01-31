@@ -10,14 +10,14 @@ const Footer = () => {
             <a
               target='_blank'
               href='https://www.linkedin.com/in/isahelheredia/'
-              className='bg-stone-400 p-2 font-semibold text-white hover:text-blue-700 duration-500 inline-flex items-center space-x-2 rounded-full'
+              className='bg-stone-400 p-2 font-semibold text-stone-50 hover:text-blue-700 duration-500 inline-flex items-center space-x-2 rounded-full'
             >
               <Linkedin className='w-5 h-5 fill-current' />
             </a>
             <a
               target='_blank'
               href='https://github.com/isahelgersai'
-              className='bg-stone-400 p-2 font-semibold text-white  hover:text-black duration-500 inline-flex items-center space-x-2 rounded-full'
+              className='bg-stone-400 p-2 font-semibold text-stone-50  hover:text-black duration-500 inline-flex items-center space-x-2 rounded-full'
             >
               <svg
                 xmlns='http://www.w3.org/2000/svg'
@@ -41,7 +41,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <p className='text-sm mt-2  opacity-50'>&copy; {new Date().getFullYear()} Isahel Heredia. All rights reserved.</p>
+      <p className='text-sm mt-2 text-stone-50 select-none opacity-50'>
+        &copy; {new Date().getFullYear()} Isahel Heredia
+      </p>
     </div>
   );
 };
