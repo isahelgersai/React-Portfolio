@@ -13,7 +13,8 @@
     "@iconify/tailwind": "^0.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "tsparticles": "^1.43.1",
+    "react-tsparticles": "^2.8.0",
+    "tsparticles": "^2.8.0",
     "vite-plugin-svgr": "^2.4.0"
   },
   "devDependencies": {

@@ -12,7 +12,7 @@ const Contact = () => {
           <form
             action='https://getform.io/f/9b958f56-1cfa-4069-a9f3-ef913e9fe5d8'
             method='POST'
-            className='flex flex-col w-full md:w-7/12'
+            className='flex flex-col w-full md:w-7/12 font-medium'
           >
             <input
               type='text'
@@ -55,7 +55,7 @@ const Contact = () => {
             />
             <button
               type='submit'
-              className=' text-lg text-center inline-block px-8 py-3 w-full text-md font-semibold rounded-lg text-white bg-gradient-to-r from-slate-800 via-teal-700 to-slate-800 drop-shadow-sm'
+              className=' text-lg text-center inline-block px-8 py-3 w-full text-md font-semibold rounded-lg text-white bg-gradient-to-r from-teal-900 via-teal-600 to-teal-900 drop-shadow-md'
             >
               Contact Me
             </button>

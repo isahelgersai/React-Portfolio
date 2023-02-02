@@ -9,7 +9,7 @@ const Skills = () => {
       <Title>Skills</Title>
 
       <div className='flex flex-col md:flex-row items-center justify-center my-24'>
-        <div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 lg:gap-x-36 lg:gap-y-16 gap-16'>
+        <div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 lg:gap-x-32 lg:gap-y-16 gap-16'>
           {SkillsList.map(({ name, icon }) => (
             <>
               <div className='flex flex-col items-center justify-center'>
@@ -21,7 +21,7 @@ const Skills = () => {
                   className='text-teal-500 hover:text-teal-200 duration-500'
                 />
 
-                <p className='text-lg font-bold text-stone-50 mt-4'>{name}</p>
+                <h5 className='text-xl font-bold text-stone-50 mt-4'>{name}</h5>
               </div>
             </>
           ))}
