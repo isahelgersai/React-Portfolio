@@ -1,8 +1,23 @@
-import React from 'react';
+import React, {useRef, useCallback} from 'react';
 import ContactInfo from './ContactInfo';
 import Title from './Title';
 
 const Contact = () => {
+  const nameRef = useRef(null);
+  const emailRef = useRef(null);
+  const messageRef = useRef(null);
+ 
+  const clearInputs = useCallback(
+    () => {
+      nameRef.current.value ='';
+      emailRef.current.value ='';
+      messageRef.current.value ='';
+    },
+    [nameRef, emailRef, messageRef],
+  )
+  
+
+
   return (
     <>
       <Title>Contact</Title>
@@ -12,9 +27,11 @@ const Contact = () => {
           <form
             action='https://getform.io/f/9b958f56-1cfa-4069-a9f3-ef913e9fe5d8'
             method='POST'
+            onSubmit={clearInputs}
             className='flex flex-col w-full md:w-7/12 font-medium'
           >
             <input
+            ref={nameRef}
               type='text'
               name='name'
               placeholder='Name'
@@ -24,10 +41,12 @@ const Contact = () => {
               border-2 rounded-md border-white
               transition
               ease-in-out
-              focus:text-gray-700 focus:bg-white focus:border-teal-500 focus:outline-none'
+              text-white
+              focus:text-white focus:bg-transparent focus:border-teal-500 focus:outline-none'
               required
             />
             <input
+            ref={emailRef}
               type='text'
               name='email'
               placeholder='Email'
@@ -37,10 +56,12 @@ const Contact = () => {
               border-2 rounded-md border-white
               transition
               ease-in-out
-              focus:text-gray-700 focus:bg-white focus:border-teal-500 focus:outline-none'
+              text-white
+              focus:text-white focus:bg-transparent focus:border-teal-500 focus:outline-none'
               required
             />
             <textarea
+            ref={messageRef}
               name='message'
               placeholder='Message'
               rows='10'
@@ -50,7 +71,8 @@ const Contact = () => {
               border-2 rounded-md border-white
               transition
               ease-in-out
-              focus:text-gray-700 focus:bg-white focus:border-teal-500 focus:outline-none'
+              text-white
+              focus:text-white focus:bg-transparent focus:border-teal-500 focus:outline-none'
               required
             />
             <button

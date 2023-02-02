@@ -21,7 +21,7 @@ const Skills = () => {
                   className='text-teal-500 hover:text-teal-200 duration-500'
                 />
 
-                <h5 className='text-xl font-bold text-stone-50 mt-4'>{name}</h5>
+                <h5 className='text-xl font-bold font-inter text-stone-50 mt-4'>{name}</h5>
               </div>
             </>
           ))}
