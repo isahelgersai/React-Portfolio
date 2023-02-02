@@ -1,11 +1,13 @@
 import React from 'react';
-import Title from '../Title';
+import { ReactComponent as IconBriefcase } from '../../assets/briefcase.svg';
 
 const Work = () => {
   return (
     <div className='font-inter'>
-      <h5 className='text-xl font-semibold mt-10 text-stone-50 select-none'>Work Experience</h5>
-
+      <div className='flex items-center mt-10 md:mr-8 md:mb-0 text-stone-50'>
+        <IconBriefcase className='w-8 h-8 fill-current' />
+        <h5 className='text-xl font-semibold ml-3 select-none'>Work Experience</h5>
+      </div>
       <ol className='relative border-l border-teal-500 mt-10 mb-20 ml-10 '>
         <li className='mb-10 ml-4'>
           <div className='absolute w-3 h-4 bg-teal-500 rounded-full mt-1.5 -left-1.5 border-2 border-stone-50'></div>
