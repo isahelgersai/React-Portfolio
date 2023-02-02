@@ -1,19 +1,24 @@
-import React, {useRef, useCallback} from 'react';
+import React, {useState, useCallback} from 'react';
 import ContactInfo from './ContactInfo';
 import Title from './Title';
 
 const Contact = () => {
-  const nameRef = useRef(null);
-  const emailRef = useRef(null);
-  const messageRef = useRef(null);
- 
+  const [formState, setFormState] = useState(initialState)
+  const {name, email, message} = formState
+
+  const onChange = useCallback(
+    (e) => {
+      const {value, name} = e.target
+      setFormState(prevState => ({...prevState, [name]: value}))
+    },
+    [],
+  )
+
   const clearInputs = useCallback(
     () => {
-      nameRef.current.value ='';
-      emailRef.current.value ='';
-      messageRef.current.value ='';
+      setFormState(initialState)
     },
-    [nameRef, emailRef, messageRef],
+    [],
   )
   
 
@@ -31,10 +36,11 @@ const Contact = () => {
             className='flex flex-col w-full md:w-7/12 font-medium'
           >
             <input
-            ref={nameRef}
+              value={name}
               type='text'
               name='name'
               placeholder='Name'
+              onChange={onChange}
               className='form-control
               my-2 p-2
               bg-transparent
@@ -46,10 +52,11 @@ const Contact = () => {
               required
             />
             <input
-            ref={emailRef}
+              value={email}
               type='text'
               name='email'
               placeholder='Email'
+              onChange={onChange}
               className='form-control
               my-2 p-2
               bg-transparent
@@ -61,9 +68,10 @@ const Contact = () => {
               required
             />
             <textarea
-            ref={messageRef}
+              value={message}
               name='message'
               placeholder='Message'
+              onChange={onChange}
               rows='10'
               className='form-control
               mb-4 p-2
@@ -91,3 +99,5 @@ const Contact = () => {
 };
 
 export default Contact;
+
+const initialState = {name:'', email:'', message: ''}
