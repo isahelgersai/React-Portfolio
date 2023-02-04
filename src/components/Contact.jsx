@@ -1,27 +1,19 @@
-import React, {useState, useCallback} from 'react';
+import React, { useState, useCallback } from 'react';
 import ContactInfo from './ContactInfo';
 import Title from './Title';
 
 const Contact = () => {
-  const [formState, setFormState] = useState(initialState)
-  const {name, email, message} = formState
+  const [formState, setFormState] = useState(initialState);
+  const { name, email, message } = formState;
 
-  const onChange = useCallback(
-    (e) => {
-      const {value, name} = e.target
-      setFormState(prevState => ({...prevState, [name]: value}))
-    },
-    [],
-  )
+  const onChange = useCallback((e) => {
+    const { value, name } = e.target;
+    setFormState((prevState) => ({ ...prevState, [name]: value }));
+  }, []);
 
-  const clearInputs = useCallback(
-    () => {
-      setFormState(initialState)
-    },
-    [],
-  )
-  
-
+  const clearInputs = useCallback(() => {
+    setFormState(initialState);
+  }, []);
 
   return (
     <>
@@ -100,4 +92,4 @@ const Contact = () => {
 
 export default Contact;
 
-const initialState = {name:'', email:'', message: ''}
+const initialState = { name: '', email: '', message: '' };
