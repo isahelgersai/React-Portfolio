@@ -13,9 +13,9 @@ const About = () => {
           alt='Avatar'
         ></img>
         <p className='text-lg lg:text-xl font-medium text-justify text-stone-50 font-inter select-none'>
-          Software developer with over 4 years of work experience. Trying to keep in touch with current and emerging
-          technologies and aiming to learn and improve my skills every day, building my version of the digital world one
-          step at a time.
+          Hi! I'm a software developer with over 4 years of work experience. Trying to keep in touch with current and
+          emerging technologies and aiming to learn and improve my skills every day, building my version of the digital
+          world one step at a time.
         </p>
       </div>
     </>
